@@ -1,8 +1,18 @@
-<script setup lang="ts">
+<script>
+import listPostsVue from '@/components/posts/list-posts.vue';
+
+export default {
+  components:{
+    listPostsVue
+  },
+  data() {
+    return {
+      userInfo: {},
+    };
+  }
+};
 </script>
 
 <template>
-  <main>
-    
-  </main>
+    <listPostsVue />
 </template>
